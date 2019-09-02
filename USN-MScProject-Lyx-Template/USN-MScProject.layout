@@ -1,0 +1,5 @@
+#% Do not delete the line below ; configure depends on this
+#\DeclareLaTeXClass[USN-MScProject, usncolours.sty]{USN-MScProject-Lyx}
+#\DeclareCategory{Articles}
+#Input general definitions
+Input stdclass.inc

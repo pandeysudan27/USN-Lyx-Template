@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass USN-MSc
+\textclass USN-MScProject
 \begin_preamble
 %% sample template file for a MSc Thesis
 %% The default is with two sided setup:
@@ -185,6 +185,474 @@ Porsgrunn, \today
 \begin_layout Standard
 \begin_inset ERT
 status open
+
+\begin_layout Plain Layout
+
+%% sample template file for a MSc Thesis
+\end_layout
+
+\begin_layout Plain Layout
+
+%% The default is with two sided setup:
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+documentclass[%
+\end_layout
+
+\begin_layout Plain Layout
+
+% oneside,    %% uncomment for onesided layout
+\end_layout
+
+\begin_layout Plain Layout
+
+% project,    %% uncomment not thesis but project report
+\end_layout
+
+\begin_layout Plain Layout
+
+% nosummary   %% uncomment if no summary page should be generated
+\end_layout
+
+\begin_layout Plain Layout
+
+%]{USN-MSc}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% --- Bibliography setup ---
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% default is the "ieee" style
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage[style=ieee, sorting=none]{biblatex}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% If you want to use "author-year" style
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% where `
+\backslash
+cite{Foo2011}` generates "Foo et al.
+ (2011)"
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% and   `
+\backslash
+parencite{Foo2011}` generates "(Foo et al.
+ 2011)"
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% then comment the line above and use
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+usepackage[style=authoryear]{biblatex}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% or
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% if you want to use "alphabetic" style then use
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% where `cite[Foo2011]` generates "[Foo11]"
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% then comment the line above and use
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+usepackage[style=alphabetic]{biblatex}
+\end_layout
+
+\begin_layout Plain Layout
+
+%%% instead.
+\end_layout
+
+\begin_layout Plain Layout
+
+%% load the bib file:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addbibresource{thesis.bib}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{lipsum} % just for providing fill text used in this template
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% --- general setup ---
+\end_layout
+
+\begin_layout Plain Layout
+
+%% Please fill in the following parameters:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+mytitle}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% title:
+\end_layout
+
+\begin_layout Plain Layout
+
+<Title>
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+mysubtitle}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% master programme (for thesis only)
+\end_layout
+
+\begin_layout Plain Layout
+
+%% uncomment the appropriate one:
+\end_layout
+
+\begin_layout Plain Layout
+
+Electrical Power Engineering
+\end_layout
+
+\begin_layout Plain Layout
+
+%Energy and Environmental Technology
+\end_layout
+
+\begin_layout Plain Layout
+
+%Industrial IT and Automation
+\end_layout
+
+\begin_layout Plain Layout
+
+%Process Technology
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+mykeywords}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% keywords (for thesis only):
+\end_layout
+
+\begin_layout Plain Layout
+
+<keyword one, keyword two, 
+\backslash
+ldots>
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+myauthor}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% author(thesis) or group code (project):
+\end_layout
+
+\begin_layout Plain Layout
+
+<Author's Name> or <group code>
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+myparticipants}{
+\end_layout
+
+\begin_layout Plain Layout
+
+%% group participants (for project only)
+\end_layout
+
+\begin_layout Plain Layout
+
+<First participant>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<Second participant>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<Third participant>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<Fourth participant>
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+supervisor}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% supervisor:
+\end_layout
+
+\begin_layout Plain Layout
+
+<Supervisor's Name>}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{document}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% --- title page setup ---
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+USNtitlepage%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% Please provide the following information:
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #1 optional figure (set to {} if not wanted)
+\end_layout
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+  {
+\backslash
+normalsize <optional figure>}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+includegraphics[draft,width=
+\backslash
+textwidth]{USN_logo_en}}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #2 confidential?:
+\end_layout
+
+\begin_layout Plain Layout
+
+{yes} % anything other then {yes} means open to public
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #3 Project partner:
+\end_layout
+
+\begin_layout Plain Layout
+
+{<Project partner>}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #4 Summary:
+\end_layout
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[6-7]
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
 
 \begin_layout Plain Layout
 
