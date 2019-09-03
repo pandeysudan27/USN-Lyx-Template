@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass USN-MScProject
+\textclass USN-PhD
 \begin_preamble
 \usepackage{lipsum}
 \end_preamble
@@ -88,7 +88,7 @@ status open
 This is a place for 
 \series bold
 \size large
-Title of your Project
+Title of your PhD Thesis
 \end_layout
 
 \end_inset
@@ -134,10 +134,61 @@ mytitle}{%
 status open
 
 \begin_layout Plain Layout
-This is a place for latex code for 
+This is a place for 
 \series bold
 \size large
-Group Code
+Keywords used in the Thesis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+mykeywords}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% keywords (for thesis only):
+\end_layout
+
+\begin_layout Plain Layout
+
+<keyword one, keyword two, 
+\backslash
+ldots>
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Author's Name
 \end_layout
 
 \end_inset
@@ -160,142 +211,17 @@ myauthor}{%
 
 \begin_layout Plain Layout
 
-%% for project only group code
+%% author(thesis):
 \end_layout
 
 \begin_layout Plain Layout
 
-<group code> %%eg.
- Mp-08-19
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-This is a place for 
-\series bold
-\size large
-Name of Participants
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-myparticipants}{
-\end_layout
-
-\begin_layout Plain Layout
-
-%% group participants (for project only)
-\end_layout
-
-\begin_layout Plain Layout
-
-<First participant>
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-<Second participant>
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-<Third participant>
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-<Fourth participant>
+<Author's Name>
 \end_layout
 
 \begin_layout Plain Layout
 
 }
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-This is a place for 
-\series bold
-\size large
-Supervisors
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-supervisor}{%
-\end_layout
-
-\begin_layout Plain Layout
-
-%% supervisor:
-\end_layout
-
-\begin_layout Plain Layout
-
-<Supervisor's Name>}
 \end_layout
 
 \end_inset
@@ -327,70 +253,7 @@ status open
 
 
 \backslash
-USNtitlepage%
-\end_layout
-
-\begin_layout Plain Layout
-
-%% Please provide the following information:
-\end_layout
-
-\begin_layout Plain Layout
-
-%% #1 optional figure (set to {} if not wanted)
-\end_layout
-
-\begin_layout Plain Layout
-
-{%
-\end_layout
-
-\begin_layout Plain Layout
-
-  {
-\backslash
-normalsize <optional figure>}
-\end_layout
-
-\begin_layout Plain Layout
-
-   
-\backslash
-includegraphics[width=
-\backslash
-textwidth]{USN_logo_en}}
-\end_layout
-
-\begin_layout Plain Layout
-
-%% #2 confidential or not:
-\end_layout
-
-\begin_layout Plain Layout
-
-{yes} % anything other then {yes} means open to public
-\end_layout
-
-\begin_layout Plain Layout
-
-%% #3 Project partner:
-\end_layout
-
-\begin_layout Plain Layout
-
-{<Project partner>}
-\end_layout
-
-\begin_layout Plain Layout
-
-%% #4 Summary:
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\backslash
-lipsum[6-7]}
+USNtitlepage
 \end_layout
 
 \end_inset
@@ -478,7 +341,7 @@ today
 
 
 \backslash
-myparticipants %% for project
+myauthor %% for thesis
 \end_layout
 
 \end_inset
@@ -803,7 +666,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename fig/USN_logo.pdf
+	filename D:/WorkingDirectory/ForGithubRepos/USN-Lyx-Template/USN-MSc-Lyx-Template/fig/USN_logo.pdf
 	width 0.8text%
 
 \end_inset
@@ -875,7 +738,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename fig/USN_logo_en.pdf
+	filename D:/WorkingDirectory/ForGithubRepos/USN-Lyx-Template/USN-MSc-Lyx-Template/fig/USN_logo_en.pdf
 	width 0.8text%
 
 \end_inset
@@ -1269,10 +1132,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
@@ -1403,10 +1262,6 @@ Sample Table
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -1418,23 +1273,6 @@ Mathematical Model
 
 \begin_layout Standard
 This is a very best mathematical model you know!
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Below is for bibliography entry.
- The directory containing this USNMScProject.lyx contains thesis.bib which
- is used for bibliographic entries.
- To enter bibliography select the place of text and goto Insert citation
- and choose Available citations.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1529,7 +1367,7 @@ If you want to add PDF pages in this appendix here.
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename fig/pdfpages.pdf
+	filename D:/WorkingDirectory/ForGithubRepos/USN-Lyx-Template/USN-MSc-Lyx-Template/fig/pdfpages.pdf
 	extra LaTeX "pages={1-5}"
 
 \end_inset

@@ -79,8 +79,8 @@
       \textbf{Title:}    & \begin{minipage}[t]{0.8\textwidth}
                              \textit{\mytitle}\end{minipage} \\
       \textbf{Pages:}    & \textit{\pageref{LastPage}}       \\
-      \textbf{Keywords:} & \begin{minipage}[t]{0.8\textwidth}
-                           \textit{\mykeywords}\end{minipage}
+      %\textbf{Keywords:} & \begin{minipage}[t]{0.8\textwidth}
+                         %  \textit{\mykeywords}\end{minipage}
     \end{tabular}
 
     \begin{tabular}{rl}
