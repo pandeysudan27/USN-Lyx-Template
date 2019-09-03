@@ -5,6 +5,9 @@
 \save_transient_properties true
 \origin unavailable
 \textclass USN-MScProject
+\begin_preamble
+\usepackage{lipsum}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -78,168 +81,24 @@
 \begin_body
 
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-%% sample template file for a MSc Thesis
+This is a place for 
+\series bold
+\size large
+Title of your Project
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-%% The default is with two sided setup:
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-documentclass[%
-\end_layout
-
-\begin_layout Plain Layout
-
-% oneside,    %% uncomment for onesided layout
-\end_layout
-
-\begin_layout Plain Layout
-
-% project,    %% uncomment not thesis but project report
-\end_layout
-
-\begin_layout Plain Layout
-
-% nosummary   %% uncomment if no summary page should be generated
-\end_layout
-
-\begin_layout Plain Layout
-
-%]{USN-MSc}
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
-
-% --- Bibliography setup ---
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% default is the "ieee" style
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage[style=ieee, sorting=none]{biblatex}
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% If you want to use "author-year" style
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% where `
-\backslash
-cite{Foo2011}` generates "Foo et al.
- (2011)"
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% and   `
-\backslash
-parencite{Foo2011}` generates "(Foo et al.
- 2011)"
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% then comment the line above and use
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-usepackage[style=authoryear]{biblatex}
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% or
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% if you want to use "alphabetic" style then use
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% where `cite[Foo2011]` generates "[Foo11]"
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% then comment the line above and use
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-usepackage[style=alphabetic]{biblatex}
-\end_layout
-
-\begin_layout Plain Layout
-
-%%% instead.
-\end_layout
-
-\begin_layout Plain Layout
-
-%% load the bib file:
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-addbibresource{thesis.bib}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usepackage{lipsum} % just for providing fill text used in this template
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% --- general setup ---
-\end_layout
-
-\begin_layout Plain Layout
-
-%% Please fill in the following parameters:
-\end_layout
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -265,87 +124,30 @@ mytitle}{%
 }
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-mysubtitle}{%
+This is a place for latex code for 
+\series bold
+\size large
+Group Code
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-%% master programme (for thesis only)
-\end_layout
-
-\begin_layout Plain Layout
-
-%% uncomment the appropriate one:
-\end_layout
-
-\begin_layout Plain Layout
-
-Electrical Power Engineering
-\end_layout
-
-\begin_layout Plain Layout
-
-%Energy and Environmental Technology
-\end_layout
-
-\begin_layout Plain Layout
-
-%Industrial IT and Automation
-\end_layout
-
-\begin_layout Plain Layout
-
-%Process Technology
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-mykeywords}{%
-\end_layout
-
-\begin_layout Plain Layout
-
-%% keywords (for thesis only):
-\end_layout
-
-\begin_layout Plain Layout
-
-<keyword one, keyword two, 
-\backslash
-ldots>
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -358,12 +160,13 @@ myauthor}{%
 
 \begin_layout Plain Layout
 
-%% author(thesis) or group code (project):
+%% for project only group code
 \end_layout
 
 \begin_layout Plain Layout
 
-<Author's Name> or <group code>
+<group code> %%eg.
+ Mp-08-19
 \end_layout
 
 \begin_layout Plain Layout
@@ -371,9 +174,30 @@ myauthor}{%
 }
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Name of Participants
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -430,6 +254,31 @@ myparticipants}{
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Supervisors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
 
@@ -449,25 +298,30 @@ supervisor}{%
 <Supervisor's Name>}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
-\begin_layout Plain Layout
-
-
-\backslash
-begin{document}
-\end_layout
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Title page setup
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
-\begin_layout Plain Layout
-
-% --- title page setup ---
-\end_layout
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -502,14 +356,14 @@ normalsize <optional figure>}
 
    
 \backslash
-includegraphics[draft,width=
+includegraphics[width=
 \backslash
 textwidth]{USN_logo_en}}
 \end_layout
 
 \begin_layout Plain Layout
 
-%% #2 confidential?:
+%% #2 confidential or not:
 \end_layout
 
 \begin_layout Plain Layout
@@ -534,24 +388,35 @@ textwidth]{USN_logo_en}}
 
 \begin_layout Plain Layout
 
-{%
-\end_layout
-
-\begin_layout Plain Layout
-
-
+{
 \backslash
-lipsum[6-7]
+lipsum[6-7]}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
-
-}
+This is a place for 
+\series bold
+\size large
+Preface
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -585,41 +450,63 @@ lipsum[1-3]
 
 
 \backslash
-bigskip
+
+\backslash
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
 Porsgrunn, 
 \backslash
-today
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
+today 
+\backslash
 
 \backslash
-myauthor %% for thesis
+
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-%
+
 \backslash
 myparticipants %% for project
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Table of contents, list of figures and tables 
+\color red
+no need to edit
+\end_layout
+
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -682,9 +569,30 @@ addcontentsline{toc}{section}{
 listtablename}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Nomenclature and symbols
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -700,78 +608,800 @@ chapter*{Nomenclature}
 label{sec:nomenclature}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
 \begin_layout Plain Layout
 
-bla
+\series bold
+Symbol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Explanation
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A/D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analog/Digital Controller
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CMR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Common Mode Rejection
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+foo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Foo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bar
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "ch:intro-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This figure wont be shown in output because .pdf is used.
+ Lyx preferred moslty .svg for better quality.
+ However, other figure file like .png, .jpg, etc can be used.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/USN_logo.pdf
+	width 0.8text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usn-logo-1"
+
+\end_inset
+
+Norwegian (bokmål) variant of the USN logo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This figure wont be shown in output because .pdf is used.
+ Lyx preferred moslty .svg for better quality.
+ However, other figure file like .png, .jpg, etc can be used.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/USN_logo_en.pdf
+	width 0.8text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usn-logo-en-1"
+
+\end_inset
+
+: English variant of the USN logo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+ Curabitur dictum gravida mauris.
+ Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+ Donec vehicula augue eu neque.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Mauris ut leo.
+ Cras viverra metus rhoncus sem.
+ Nulla et lectus vestibulum urna fringilla ultrices.
+ Phasellus eu tellus sit amet tortor gravida placerat.
+ Integer sapien est, iaculis in, pretium quis, viverra ac, nunc.
+ Praesent eget sem vel leo ultrices bibendum.
+ Aenean faucibus.
+ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla.
+ Curabitur auctor semper nulla.
+ Donec varius orci eget risus.
+ Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam.
+ Duis eget orci sit amet orci dignissim rutrum.
+ Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
+ Morbi auctor lorem non justo.
+ Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+ Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
+ vitae ornare odio metus a mi.
+ Morbi ac orci et nisl hendrerit mollis.
+ Suspendisse ut massa.
+ Cras nec ante.
+ Pellentesque a nulla.
+ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ ridiculus mus.
+ Aliquam tincidunt urna.
+ Nulla ullamcorper vestibulum turpis.
+ Pellentesque cursus luctus mauris.
+ Nulla malesuada porttitor diam.
+ Donec felis erat, congue non, volutpat at, tincidunt tristique, libero.
+ Vivamus viverra fermentum felis.
+ Donec nonummy pellentesque ante.
+ Phasellus adipiscing semper elit.
+ Proin fermentum massa ac quam.
+ Sed diam turpis, molestie vitae, placerat a, molestie nec, leo.
+ Maecenas lacinia.
+ Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum.
+ Morbi blandit ligula feugiat magna.
+ Nunc eleifend consequat lorem.
+ Sed lacinia nulla vitae enim.
+ Pellentesque tincidunt purus vel magna.
+ Integer non enim.
+ Praesent euismod nunc eu purus.
+ Donec bibendum quam in tellus.
+ Nullam cursus pulvinar lectus.
+ Donec et mi.
+ Nam vulputate metus eu enim.
+ Vestibulum pellentesque felis eu massa.
+ Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+ Fusce mauris.
+ Vestibulum luctus nibh at lectus.
+ Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac venenatis
+ arcu wisi vel nisl.
+ Vestibulum diam.
+ Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue
+ quam, in hendrerit risus eros eget felis.
+ Maecenas eget erat in sapien mattis porttitor.
+ Vestibulum porttitor.
+ Nulla facilisi.
+ Sed a turpis eu lacus commodo facilisis.
+ Morbi fringilla, wisi in dignissim interdum, justo lectus sagittis dui,
+ et vehicula libero dui cursus dui.
+ Mauris tempor ligula sed lacus.
+ Duis cursus enim ut augue.
+ Cras ac magna.
+ Cras nulla.
+ Nulla egestas.
+ Curabitur a leo.
+ Quisque egestas wisi eget nunc.
+ Nam feugiat lacus vel est.
+ Curabitur consectetuer.
+ Suspendisse vel felis.
+ Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae, arcu.
+ Aenean faucibus pede eu ante.
+ Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl.
+ Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna.
+ Donec eu purus.
+ Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et
+ convallis elit erat sed nulla.
+ Donec luctus.
+ Curabitur et nunc.
+ Aliquam dolor odio, commodo pretium, ultricies non, pharetra in, velit.
+ Integer arcu est, nonummy in, fermentum faucibus, egestas vel, odio.
+ Sed commodo posuere pede.
+ Mauris ut est.
+ Ut quis purus.
+ Sed ac odio.
+ Sed vehicula hendrerit sem.
+ Duis non odio.
+ Morbi ut dui.
+ Sed accumsan risus eget odio.
+ In hac habitasse platea dictumst.
+ Pellentesque non elit.
+ Fusce sed justo eu urna porta tincidunt.
+ Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat.
+ Morbi quis dolor.
+ Donec pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis
+ congue purus metus ultricies tellus.
+ Proin et quam.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos hymenaeos.
+ Praesent sapien turpis, fermentum vel, eleifend faucibus, vehicula eu,
+ lacus.
+\end_layout
+
+\begin_layout Section
+Background
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:back-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+\begin_inset Formula 
+\begin{equation}
+e=mc^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+ Curabitur dictum gravida mauris.
+ Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+ Donec vehicula augue eu neque.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Mauris ut leo.
+ Cras viverra metus rhoncus sem.
+ Nulla et lectus vestibulum urna fringilla ultrices.
+ Phasellus eu tellus sit amet tortor gravida placerat.
+ Integer sapien est, iaculis in, pretium quis, viverra ac, nunc.
+ Praesent eget sem vel leo ultrices bibendum.
+ Aenean faucibus.
+ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla.
+ Curabitur auctor semper nulla.
+ Donec varius orci eget risus.
+ Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam.
+ Duis eget orci sit amet orci dignissim rutrum.
+ Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
+ Morbi auctor lorem non justo.
+ Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+ Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
+ vitae ornare odio metus a mi.
+ Morbi ac orci et nisl hendrerit mollis.
+ Suspendisse ut massa.
+ Cras nec ante.
+ Pellentesque a nulla.
+ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ ridiculus mus.
+ Aliquam tincidunt urna.
+ Nulla ullamcorper vestibulum turpis.
+ Pellentesque cursus luctus mauris.
+ Nulla malesuada porttitor diam.
+ Donec felis erat, congue non, volutpat at, tincidunt tristique, libero.
+ Vivamus viverra fermentum felis.
+ Donec nonummy pellentesque ante.
+ Phasellus adipiscing semper elit.
+ Proin fermentum massa ac quam.
+ Sed diam turpis, molestie vitae, placerat a, molestie nec, leo.
+ Maecenas lacinia.
+ Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum.
+ Morbi blandit ligula feugiat magna.
+ Nunc eleifend consequat lorem.
+ Sed lacinia nulla vitae enim.
+ Pellentesque tincidunt purus vel magna.
+ Integer non enim.
+ Praesent euismod nunc eu purus.
+ Donec bibendum quam in tellus.
+ Nullam cursus pulvinar lectus.
+ Donec et mi.
+ Nam vulputate metus eu enim.
+ Vestibulum pellentesque felis eu massa.
+ Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+ Fusce mauris.
+ Vestibulum luctus nibh at lectus.
+ Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac venenatis
+ arcu wisi vel nisl.
+ Vestibulum diam.
+ Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue
+ quam, in hendrerit risus eros eget felis.
+ Maecenas eget erat in sapien mattis porttitor.
+ Vestibulum porttitor.
+ Nulla facilisi.
+ Sed a turpis eu lacus commodo facilisis.
+ Morbi fringilla, wisi in dignissim interdum, justo lectus sagittis dui,
+ et vehicula libero dui cursus dui.
+ Mauris tempor ligula sed lacus.
+ Duis cursus enim ut augue.
+ Cras ac magna.
+ Cras nulla.
+ Nulla egestas.
+ Curabitur a leo.
+ Quisque egestas wisi eget nunc.
+ Nam feugiat lacus vel est.
+ Curabitur consectetuer.
+ Suspendisse vel felis.
+ Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae, arcu.
+ Aenean faucibus pede eu ante.
+ Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl.
+ Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna.
+ Donec eu purus.
+ Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et
+ convallis elit erat sed nulla.
+ Donec luctus.
+ Curabitur et nunc.
+ Aliquam dolor odio, commodo pretium, ultricies non, pharetra in, velit.
+ Integer arcu est, nonummy in, fermentum faucibus, egestas vel, odio.
+ Sed commodo posuere pede.
+ Mauris ut est.
+ Ut quis purus.
+ Sed ac odio.
+ Sed vehicula hendrerit sem.
+ Duis non odio.
+ Morbi ut dui.
+ Sed accumsan risus eget odio.
+ In hac habitasse platea dictumst.
+ Pellentesque non elit.
+ Fusce sed justo eu urna porta tincidunt.
+ Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat.
+ Morbi quis dolor.
+ Donec pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis
+ congue purus metus ultricies tellus.
+ Proin et quam.
+ Class aptent taciti sociosqu ad litora torquent per conubianostra, per
+ inceptos hymenaeos.
+ Praesent sapien turpis, fermentum vel, eleifend faucibus, vehicula eu,
+ lacus.
+ 
+\end_layout
+
+\begin_layout Chapter
+Theory
+\end_layout
+
+\begin_layout Section
+Maxwell's Equations
+\end_layout
+
+\begin_layout Standard
+The equations in lyx is very easy to type.
+ 
+\series bold
+Ctrl+m
+\series default
+ is for inline equation, like this, 
+\begin_inset Formula $e=mc^{2}.$
+\end_inset
+
+ For numbered equation it is 
+\series bold
+Ctrl+shift+m
+\series default
+, like this,
+\begin_inset Formula 
+\begin{align*}
+a^{2}+b^{2}= & c^{2}\\
+x+y= & 9\\
+T_{\mathrm{a}}^{\mathrm{h}}-T_{\mathrm{a}}^{c}= & \Delta T.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Table in lyx is also easy to setup.
+ For that to float a Table so that the space of document is arrange by LaTeX
+ compiler itself we need Goto Insert>Float>Table.
+ We specify name and lable of that Table and then we insert a table inside
+ this floated table box.
+ Bring cursur just infront of Table hit enter and Goto Edit>Paragraph Settings>C
+enter and click Ok.
+ Now Goto Insert>Table and choose rows and column.
+ For more see this link 
+\color blue
+https://www.youtube.com/watch?v=NF8euiehYjo
+\color inherit
+ .
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Parameters
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Values
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\unit[2]{^{\circ}C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\unit[3]{mm}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\unit[8]{Wb/m^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Sample-Table"
+
+\end_inset
+
+Sample Table
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-
-\backslash
-begin{longtable}{ll}
-\end_layout
-
-\begin_layout Plain Layout
-
-  
-\backslash
-textbf{Symbol} & 
-\backslash
-textbf{Explanation}
-\backslash
-endhead
-\backslash
-
-\backslash
 
 \end_layout
 
-\begin_layout Plain Layout
-
-  A/D	& Analogue-Digital-Converter 
-\backslash
-
-\backslash
-
+\begin_layout Section
+Mathematical Model
 \end_layout
 
-\begin_layout Plain Layout
-
-  CMR	& Common Mode Rejection 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-  foo	& Foo 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-  bar 	& Bar
-\end_layout
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{longtable}
-\end_layout
-
-\begin_layout Plain Layout
-
+iffalse
 \end_layout
 
 \begin_layout Plain Layout
@@ -899,10 +1529,6 @@ lipsum
 
 \begin_layout Plain Layout
 
-\end_layout
-
-\begin_layout Plain Layout
-
 
 \backslash
 section{Background}
@@ -946,6 +1572,10 @@ end{equation}
 
 \backslash
 lipsum
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1412,6 +2042,17 @@ lipsum{100-150}
 
 \begin_layout Plain Layout
 
+
+\backslash
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1733,35 +2374,76 @@ includepdf[pages=1-5,openright]{fig/pdfpages}
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-
-\backslash
-end{document}
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
+\begin_layout Chapter
+Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "ch:intro"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
 \begin_layout Plain Layout
 
-%%% Local Variables:
 \end_layout
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/USN_logo.pdf
+	width 0.8text%
 
-%%% mode: latex
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-
-%%% TeX-master: t
-\end_layout
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usn-logo"
 
-%%% End:
+\end_inset
+
+Norwegian (bokmål) variant of the USN logo
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1774,6 +2456,366 @@ end{document}
 \end_layout
 
 \begin_layout Standard
+Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/USN_logo_en.pdf
+	width 0.8text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:usn-logo-en"
+
+\end_inset
+
+: English variant of the USN logo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+ Curabitur dictum gravida mauris.
+ Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+ Donec vehicula augue eu neque.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Mauris ut leo.
+ Cras viverra metus rhoncus sem.
+ Nulla et lectus vestibulum urna fringilla ultrices.
+ Phasellus eu tellus sit amet tortor gravida placerat.
+ Integer sapien est, iaculis in, pretium quis, viverra ac, nunc.
+ Praesent eget sem vel leo ultrices bibendum.
+ Aenean faucibus.
+ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla.
+ Curabitur auctor semper nulla.
+ Donec varius orci eget risus.
+ Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam.
+ Duis eget orci sit amet orci dignissim rutrum.
+ Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
+ Morbi auctor lorem non justo.
+ Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+ Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
+ vitae ornare odio metus a mi.
+ Morbi ac orci et nisl hendrerit mollis.
+ Suspendisse ut massa.
+ Cras nec ante.
+ Pellentesque a nulla.
+ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ ridiculus mus.
+ Aliquam tincidunt urna.
+ Nulla ullamcorper vestibulum turpis.
+ Pellentesque cursus luctus mauris.
+ Nulla malesuada porttitor diam.
+ Donec felis erat, congue non, volutpat at, tincidunt tristique, libero.
+ Vivamus viverra fermentum felis.
+ Donec nonummy pellentesque ante.
+ Phasellus adipiscing semper elit.
+ Proin fermentum massa ac quam.
+ Sed diam turpis, molestie vitae, placerat a, molestie nec, leo.
+ Maecenas lacinia.
+ Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum.
+ Morbi blandit ligula feugiat magna.
+ Nunc eleifend consequat lorem.
+ Sed lacinia nulla vitae enim.
+ Pellentesque tincidunt purus vel magna.
+ Integer non enim.
+ Praesent euismod nunc eu purus.
+ Donec bibendum quam in tellus.
+ Nullam cursus pulvinar lectus.
+ Donec et mi.
+ Nam vulputate metus eu enim.
+ Vestibulum pellentesque felis eu massa.
+ Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+ Fusce mauris.
+ Vestibulum luctus nibh at lectus.
+ Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac venenatis
+ arcu wisi vel nisl.
+ Vestibulum diam.
+ Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue
+ quam, in hendrerit risus eros eget felis.
+ Maecenas eget erat in sapien mattis porttitor.
+ Vestibulum porttitor.
+ Nulla facilisi.
+ Sed a turpis eu lacus commodo facilisis.
+ Morbi fringilla, wisi in dignissim interdum, justo lectus sagittis dui,
+ et vehicula libero dui cursus dui.
+ Mauris tempor ligula sed lacus.
+ Duis cursus enim ut augue.
+ Cras ac magna.
+ Cras nulla.
+ Nulla egestas.
+ Curabitur a leo.
+ Quisque egestas wisi eget nunc.
+ Nam feugiat lacus vel est.
+ Curabitur consectetuer.
+ Suspendisse vel felis.
+ Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae, arcu.
+ Aenean faucibus pede eu ante.
+ Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl.
+ Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna.
+ Donec eu purus.
+ Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et
+ convallis elit erat sed nulla.
+ Donec luctus.
+ Curabitur et nunc.
+ Aliquam dolor odio, commodo pretium, ultricies non, pharetra in, velit.
+ Integer arcu est, nonummy in, fermentum faucibus, egestas vel, odio.
+ Sed commodo posuere pede.
+ Mauris ut est.
+ Ut quis purus.
+ Sed ac odio.
+ Sed vehicula hendrerit sem.
+ Duis non odio.
+ Morbi ut dui.
+ Sed accumsan risus eget odio.
+ In hac habitasse platea dictumst.
+ Pellentesque non elit.
+ Fusce sed justo eu urna porta tincidunt.
+ Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat.
+ Morbi quis dolor.
+ Donec pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis
+ congue purus metus ultricies tellus.
+ Proin et quam.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos hymenaeos.
+ Praesent sapien turpis, fermentum vel, eleifend faucibus, vehicula eu,
+ lacus.
+\end_layout
+
+\begin_layout Section
+Background
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:back"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+\begin_inset Formula 
+\begin{equation}
+e=mc^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+ Curabitur dictum gravida mauris.
+ Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+ Donec vehicula augue eu neque.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Mauris ut leo.
+ Cras viverra metus rhoncus sem.
+ Nulla et lectus vestibulum urna fringilla ultrices.
+ Phasellus eu tellus sit amet tortor gravida placerat.
+ Integer sapien est, iaculis in, pretium quis, viverra ac, nunc.
+ Praesent eget sem vel leo ultrices bibendum.
+ Aenean faucibus.
+ Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla.
+ Curabitur auctor semper nulla.
+ Donec varius orci eget risus.
+ Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam.
+ Duis eget orci sit amet orci dignissim rutrum.
+ Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
+ Morbi auctor lorem non justo.
+ Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+ Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna,
+ vitae ornare odio metus a mi.
+ Morbi ac orci et nisl hendrerit mollis.
+ Suspendisse ut massa.
+ Cras nec ante.
+ Pellentesque a nulla.
+ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ ridiculus mus.
+ Aliquam tincidunt urna.
+ Nulla ullamcorper vestibulum turpis.
+ Pellentesque cursus luctus mauris.
+ Nulla malesuada porttitor diam.
+ Donec felis erat, congue non, volutpat at, tincidunt tristique, libero.
+ Vivamus viverra fermentum felis.
+ Donec nonummy pellentesque ante.
+ Phasellus adipiscing semper elit.
+ Proin fermentum massa ac quam.
+ Sed diam turpis, molestie vitae, placerat a, molestie nec, leo.
+ Maecenas lacinia.
+ Nam ipsum ligula, eleifend at, accumsan nec, suscipit a, ipsum.
+ Morbi blandit ligula feugiat magna.
+ Nunc eleifend consequat lorem.
+ Sed lacinia nulla vitae enim.
+ Pellentesque tincidunt purus vel magna.
+ Integer non enim.
+ Praesent euismod nunc eu purus.
+ Donec bibendum quam in tellus.
+ Nullam cursus pulvinar lectus.
+ Donec et mi.
+ Nam vulputate metus eu enim.
+ Vestibulum pellentesque felis eu massa.
+ Quisque ullamcorper placerat ipsum.
+ Cras nibh.
+ Morbi vel justo vitae lacus tincidunt ultrices.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ In hac habitasse platea dictumst.
+ Integer tempus convallis augue.
+ Etiam facilisis.
+ Nunc elementum fermentum wisi.
+ Aenean placerat.
+ Ut imperdiet, enim sed gravida sollicitudin, felis odio placerat quam,
+ ac pulvinar elit purus eget enim.
+ Nunc vitae tortor.
+ Proin tempus nibh sit amet nisl.
+ Vivamus quis tortor vitae risus porta vehicula.
+ Fusce mauris.
+ Vestibulum luctus nibh at lectus.
+ Sed bibendum, nulla a faucibus semper, leo velit ultricies tellus, ac venenatis
+ arcu wisi vel nisl.
+ Vestibulum diam.
+ Aliquam pellentesque, augue quis sagittis posuere, turpis lacus congue
+ quam, in hendrerit risus eros eget felis.
+ Maecenas eget erat in sapien mattis porttitor.
+ Vestibulum porttitor.
+ Nulla facilisi.
+ Sed a turpis eu lacus commodo facilisis.
+ Morbi fringilla, wisi in dignissim interdum, justo lectus sagittis dui,
+ et vehicula libero dui cursus dui.
+ Mauris tempor ligula sed lacus.
+ Duis cursus enim ut augue.
+ Cras ac magna.
+ Cras nulla.
+ Nulla egestas.
+ Curabitur a leo.
+ Quisque egestas wisi eget nunc.
+ Nam feugiat lacus vel est.
+ Curabitur consectetuer.
+ Suspendisse vel felis.
+ Ut lorem lorem, interdum eu, tincidunt sit amet, laoreet vitae, arcu.
+ Aenean faucibus pede eu ante.
+ Praesent enim elit, rutrum at, molestie non, nonummy vel, nisl.
+ Ut lectus eros, malesuada sit amet, fermentum eu, sodales cursus, magna.
+ Donec eu purus.
+ Quisque vehicula, urna sed ultricies auctor, pede lorem egestas dui, et
+ convallis elit erat sed nulla.
+ Donec luctus.
+ Curabitur et nunc.
+ Aliquam dolor odio, commodo pretium, ultricies non, pharetra in, velit.
+ Integer arcu est, nonummy in, fermentum faucibus, egestas vel, odio.
+ Sed commodo posuere pede.
+ Mauris ut est.
+ Ut quis purus.
+ Sed ac odio.
+ Sed vehicula hendrerit sem.
+ Duis non odio.
+ Morbi ut dui.
+ Sed accumsan risus eget odio.
+ In hac habitasse platea dictumst.
+ Pellentesque non elit.
+ Fusce sed justo eu urna porta tincidunt.
+ Mauris felis odio, sollicitudin sed, volutpat a, ornare ac, erat.
+ Morbi quis dolor.
+ Donec pellentesque, erat ac sagittis semper, nunc dui lobortis purus, quis
+ congue purus metus ultricies tellus.
+ Proin et quam.
+ Class aptent taciti sociosqu ad litora torquent per conubianostra, per
+ inceptos hymenaeos.
+ Praesent sapien turpis, fermentum vel, eleifend faucibus, vehicula eu,
+ lacus.
+ 
+\end_layout
+
+\begin_layout Chapter
+Theory
+\end_layout
+
+\begin_layout Standard
+nostra, per inceptos hymenaeos.
+ Praesent sapien turpis, fermentum vel, eleifend faucibus, vehicula eu,
+ lacus.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "thesis"
+options "bibtotoc,IEEEtran"
+
+\end_inset
+
 
 \end_layout
 
