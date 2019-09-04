@@ -4,13 +4,13 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass USN-PhD
+\textclass USN-BSc
 \begin_preamble
 \usepackage{lipsum}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language norsk
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -66,7 +66,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style swiss
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -88,7 +88,7 @@ status open
 This is a place for 
 \series bold
 \size large
-Title of your PhD Thesis
+Title of your Project
 \end_layout
 
 \end_inset
@@ -111,12 +111,12 @@ mytitle}{%
 
 \begin_layout Plain Layout
 
-%% title:
+%% tittel:
 \end_layout
 
 \begin_layout Plain Layout
 
-<Title>
+<tittel>
 \end_layout
 
 \begin_layout Plain Layout
@@ -137,7 +137,7 @@ status open
 This is a place for 
 \series bold
 \size large
-Keywords used in the Thesis
+Your Subject code and name
 \end_layout
 
 \end_inset
@@ -155,19 +155,17 @@ status open
 \backslash
 newcommand{
 \backslash
-mykeywords}{%
+mysubtitle}{%
 \end_layout
 
 \begin_layout Plain Layout
 
-%% keywords (for thesis only):
+%% subject code:
 \end_layout
 
 \begin_layout Plain Layout
 
-<keyword one, keyword two, 
-\backslash
-ldots>
+<emnekode og emnenavn>
 \end_layout
 
 \begin_layout Plain Layout
@@ -188,7 +186,7 @@ status open
 This is a place for 
 \series bold
 \size large
-Author's Name
+Group Code
 \end_layout
 
 \end_inset
@@ -211,17 +209,61 @@ myauthor}{%
 
 \begin_layout Plain Layout
 
-%% author(thesis):
+%% group code:
 \end_layout
 
 \begin_layout Plain Layout
 
-<Author's Name>
+<gruppekode>
 \end_layout
 
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a place for 
+\series bold
+\size large
+Supervisors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+supervisor}{%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% supervisor:
+\end_layout
+
+\begin_layout Plain Layout
+
+<super name>}
 \end_layout
 
 \end_inset
@@ -251,9 +293,196 @@ status open
 
 \begin_layout Plain Layout
 
+% --- title page setup ---
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
-USNtitlepage
+USNtitlepage%
+\end_layout
+
+\begin_layout Plain Layout
+
+%% Please provide the following information:
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #1 semster:
+\end_layout
+
+\begin_layout Plain Layout
+
+{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #2 optional figure (set to {} if not wanted)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+  {
+\backslash
+normalsize <Eventuell figur>}
+\end_layout
+
+\begin_layout Plain Layout
+
+   
+\backslash
+includegraphics[draft,width=
+\backslash
+textwidth]{USN_logo_en}}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #3 date
+\end_layout
+
+\begin_layout Plain Layout
+
+{}  % leave this empty to deactivate display
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #4 group members
+\end_layout
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+<første deltaker, NB! Ingen signatur her>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<andre deltaker, NB! Ingen signatur her>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<tredje deltaker, NB! Ingen signatur her>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<fjerde deltaker, NB! Ingen signatur her>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<femte deltaker, NB! Ingen signatur her>
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+<sjette deltaker, NB! Ingen signatur her>
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #5 confidential?:
+\end_layout
+
+\begin_layout Plain Layout
+
+{yes} % anything other then {yes} means open to public
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #6 Project partner:
+\end_layout
+
+\begin_layout Plain Layout
+
+{<name>}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #7 Norwegian Summary:
+\end_layout
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[6]
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+%% #8 English Summary:
+\end_layout
+
+\begin_layout Plain Layout
+
+{%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lipsum[7]
+\end_layout
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -283,9 +512,16 @@ status open
 
 \begin_layout Plain Layout
 
+%% The chapter name for preface is set depending on language
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
-chapter*{Preface}
+chapter*{
+\backslash
+USNpreface}
 \end_layout
 
 \begin_layout Plain Layout
@@ -299,14 +535,21 @@ label{sec:preface}
 
 
 \backslash
-addcontentsline{toc}{chapter}{Preface}
+addcontentsline{toc}{chapter}{
+\backslash
+USNpreface}
+\end_layout
+
+\begin_layout Plain Layout
+
+<Skriv forordet her
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-lipsum[1-3]
+lipsum[1-3]>
 \end_layout
 
 \begin_layout Plain Layout
@@ -666,7 +909,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/WorkingDirectory/ForGithubRepos/USN-Lyx-Template/USN-MSc-Lyx-Template/fig/USN_logo.pdf
+	filename fig/USN_logo.pdf
 	width 0.8text%
 
 \end_inset
@@ -738,7 +981,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename D:/WorkingDirectory/ForGithubRepos/USN-Lyx-Template/USN-MSc-Lyx-Template/fig/USN_logo_en.pdf
+	filename fig/USN_logo_en.pdf
 	width 0.8text%
 
 \end_inset
@@ -1367,7 +1610,7 @@ If you want to add PDF pages in this appendix here.
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename D:/WorkingDirectory/ForGithubRepos/USN-Lyx-Template/USN-MSc-Lyx-Template/fig/pdfpages.pdf
+	filename fig/pdfpages.pdf
 	extra LaTeX "pages={1-5}"
 
 \end_inset
